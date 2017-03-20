@@ -1,0 +1,31 @@
+{
+  "name": "wikistack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:production": "node app.js",
+    "start:dev": "nodemon -e html,css,js app.js",
+    "start": "npm run start:dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "marked": "^0.3.6",
+    "morgan": "^1.8.1",
+    "nunjucks": "^3.0.0",
+    "nunjucks-autoescape": "^1.0.1",
+    "path": "^0.12.7",
+    "pg": "^6.1.4",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>Pages</h3>
+   <hr>
+  <form method="GET" action="/wiki/search">
+    <input type="text" name="search" />
+    <button type="submit">Search</button>
+  </form>
+  <hr>
+  <hr>
+  <ul class="list-unstyled">
+    {% for page in pages %}
+     <li><a href="/wiki/{{ page.urlTitle }}">{{ page.title }}</a></li>
+  	{% endfor %}
+  </ul>
+{% endblock %}
